@@ -1,0 +1,60 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{listings}
+\usepackage{xcolor}
+
+
+\title{Sistema de Gestion de una Biblioteca Universitaria}   
+\author{Carlos Mendoza}
+\date{\today}
+\renewcommand{\lstlistingname}{Códigos}
+\renewcommand{\lstlistlistingname}{Lista de Códigos}
+
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}
+
+
+
+\begin{document}
+\maketitle
+\tableofcontents
+\lstlistoflistings
+
+\section{Introducción}
+\section{Descripcion del problema}
+\subsection{Análisis y diseño}
+
+\subsection{Implementacion y validación}
+\lstinputlisting[language=SQL, frame=single, numbers=left, caption={Script para crear las tablas del sistema de gestion de una biblioteca}]{codes/createTables.sql}
+
+
+\section{Conclusiones}
+
+
+
+\section{Bibliografia}
+
+\end{document}
